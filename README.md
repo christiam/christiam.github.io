@@ -1,1 +1,1 @@
-http://christiam.github.io/
+This contains the documentation for the NCBI BLAST AMI.
