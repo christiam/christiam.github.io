@@ -14,6 +14,10 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+        <!-- https://forkaweso.me/Fork-Awesome/get-started/ -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -39,11 +43,16 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">Christiam E. <span class="text-primary">Camacho</span></h1>
-                    <!--<div class="subheading mb-5"><a href="mailto:christiam.camacho@gmail.com">christiam dot camacho at gmail dot com</a></div>-->
-                    <p class="lead mb-5">An experienced professional with expertise as a cloud software architect, technical lead, software engineer, project manager and SCRUM master with strong leadership qualities, outstanding analytical and problem-solving abilities as well as excellent communications skills in English and Spanish. 
+                    <p class="lead mb-5">An experienced professional in the field of bioinformatics with expertise as a cloud architect, technical lead, software engineer, project manager and SCRUM master with strong leadership qualities, outstanding analytical and problem-solving abilities as well as excellent communications skills in English and Spanish. 
                     </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/christiam-camacho"><i class="fab fa-linkedin-in"></i></a><a class="social-icon" href="https://github.com/christiam"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/christiam-camacho"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/christiam"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://hub.docker.com/u/christiam"><i class="fab fa-docker"></i></a>
+                        <a class="social-icon" href="http://scholar.google.com/citations?user=poMkqo8AAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+                        <a class="social-icon" href="https://orcid.org/0000-0002-6709-8298"><i class="ai ai-orcid"></i></a>
+                        <!--<a class="social-icon" href="https://orcid.org/0000-0002-6709-8298"><i class="far fa-file-pdf"></i></a>-->
+                        <a class="social-icon" href="mailto:christiam@hotmail.com"><i class="far fa-envelope"></i></a>
                     </div>
                 </div>
             </section>
@@ -54,37 +63,59 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Cloud Architect and Technical Lead</h3>
-                            <div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>/<a href="https://www.nlm.nih.gov">NLM</a>/<a href="https://www.nih.gov">NIH</a> contractor via <a href="https://www.mscweb.com/">MSC</a></div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0">Cloud Architect, Technical Lead and Open Source Code contributor</h3>
+                            <div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>/<a href="https://www.nlm.nih.gov">NLM</a>/<a href="https://www.nih.gov">NIH</a> contractor, <a href="https://www.mscweb.com/">MSC</a></div>
+                            <p>Technical lead of the ElasticBLAST project, which aims to facilitate running BLAST on large query data sets (100,000+ bases/residue) against popular BLAST databases on the cloud. Technologies include <a href="https://kubernetes.io/">kubernetes</a>, <a href="https://cloud.google.com/kubernetes-engine">GKE</a>, <a href="https://cloud.google.com/storage">GCS</a>, <a href="https://www.python.org/">python</a>.
+                            </p>
+                            <p>Project manager and key developer of the BLAST AWS Overflow system, which used <a href="https://aws.amazon.com/ec2/">AWS EC2</a> instances to run the <a href="https://blast.ncbi.nlm.nih.gov">NCBI WebBLAST</a> workload on the cloud during peak hours.
+                            </p>
+                            <p>Architected, led the implementation, performance profiling, testing, and deployment of the BLAST machine image hosted at the AWS Marketplace. This product was released to the public in 2014 and relied on technologies such as <a href="https://aws.amazon.com/ec2">AWS EC2</a>, BLAST+ applications, the <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">NCBI SRA toolkit</a>, and <a href="https://www.perl.org/">Perl</a>.
+                            </p>
+                            <p>Contributed to the development and management of a project to move the <a href="https://blast.ncbi.nlm.nih.gov">NCBI WebBLAST</a> public web service to the cloud, using technologies such as Apache <a href="">Hadoop</a> and <a href="https://spark.apache.org">Spark</a>, <a href="https://aws.amazon.com/s3/">S3</a>/GCS, PubSub, Dataproc, GKE, Protocol Buffers and <a href="https://kubernetes.io/">kubernetes</a>.  </p>
+                            <p>Author and maintainer of the <a href="https://hub.docker.com/repository/docker/ncbi/blast">NCBI BLAST+</a>, <a href="https://hub.docker.com/repository/docker/ncbi/edirect">eDirect</a>, <a href="https://hub.docker.com/repository/docker/ncbi/magicblast">MagicBLAST</a>, and <a href="https://hub.docker.com/repository/docker/ncbi/sra-toolkit">SRA toolkit</a> docker images. Coached others at NCBI in moving to Docker.</p>
+                            <p>Architect and primary developer of the system that distributes BLAST databases to <a href="https://aws.amazon.com/">AWS<a/> and <a href="https://cloud.google.com/">GCP</a> clouds.</p>
+                            <p>Contributed source code to open source projects such as <a href="https://bioconda.github.io/">BioConda</a>, <a href="https://brew.sh/">HomeBrew</a>, <a href="https://biopython.org/">BioPython</a>, <a href="https://bioperl.org/">BioPerl</a>, and <a href="https://biojava.org/">BioJava</a>.</p>
+                           
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">July 2011 - Present</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">BLAST Strategy team member</h3>
+                            <div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>/<a href="https://www.nlm.nih.gov">NLM</a>/<a href="https://www.nih.gov">NIH</a> contractor, <a href="https://www.mscweb.com/">MSC</a></div>
+                            <p>Contributes to strategic direction, product management, and roadmap planning for the BLAST suite of products at NCBI.</p>
+                            <p>Proposed social media communications plan for BLAST project for 2019 and established it as a successful model to engage end-users.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2009 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Project Manager, SCRUM Master</h3>
-                            <div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>/<a href="https://www.nlm.nih.gov">NLM</a>/<a href="https://www.nih.gov">NIH</a></div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>/<a href="https://www.nlm.nih.gov">NLM</a>/<a href="https://www.nih.gov">NIH</a> contractor, <a href="https://www.mscweb.com/">MSC</a></div>
+                            <p>Performs project management roles using tailored PMI and Agile/SCRUM approaches for various BLAST related projects: BLAST on the Cloud, <a href="https://blast.ncbi.nlm.nih.gov/smartblast/?LINK_LOC=BlastHomeLink">SmartBLAST</a>, kmer BLASTP, BLASTDBv5, the BLAST+ command line applications, and the WebBLAST project. He managed the BLAST Database Pipeline redesign project from inception to its successful deployment in 2012 while pioneering Agile software development practices with the BLAST team.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">July 2009 - Present</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Senior Software Engineer</h3>
-                            <div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>/<a href="https://www.nlm.nih.gov">NLM</a>/<a href="https://www.nih.gov">NIH</a></div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                            <div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>/<a href="https://www.nlm.nih.gov">NLM</a>/<a href="https://www.nih.gov">NIH</a> contractor, <a href="https://www.mscweb.com/">MSC</a></div>
+                            <p>Introduced software engineering practices to his team such as design and code reviews, unit testing, regression testing, refactoring, and implemented automated build, test, documentation, and software metrics systems which help enhance the quality of the software produced. More notably, he helped his team adopt unit testing and as a result the team became a pioneer and desirable model for testing practices at NCBI. He has also shared this knowledge by means of a department-wide seminars.</p>
+                            <p>Led the development of the new suite of BLAST command line applications (published in BMC Bioinformatics), as well as the SOAP/WSDL based BLAST Web Service and its demo clients, the latter of which were implemented in C++, C#, Java, and <a href="https://www.perl.org">Perl</a>. Both of these efforts were made available to the public in the fall of 2008 and were presented at the 2008 NIH Research Festival.</p>
+                            <p>Responsible for the management and coordination of releases of the various libraries produced by the BLAST team in the <a href="https://ncbi.github.io/cxx-toolkit/">NCBI C++ toolkit</a>, as well as the public releases of the BLAST+ suite of command line applications. Member of the NCBI C++ Steering committee. He designed, implemented, tested, documented and maintains the tools and procedures to manage the day-to-day software development activities in the BLAST team, providing it with independence for software development efforts and experimentation, while increasing the stability of the BLAST software in the NCBI C++ toolkit, which many NCBI applications depend on. In 2015 he automated the build process for the BLAST+ command line applications by using <a href="https://www.jetbrains.com/teamcity/">TeamCity</a>.</p>
+                            <p>Participated as part of the team that ported the BLAST code to from the NCBI C to C++ toolkit, in particular the PSSM creation engine, the BLAST command line applications, and their test suites. He also coordinated and contributed to the development of new features such as masking for subject sequences, search strategies, BLAST tasks, application installers, and authored the <a href="https://www.ncbi.nlm.nih.gov/books/NBK279690/">BLAST+ command line applications’ user manual</a> and its cross-platform regression test suite.</p>
+                            <p>Technical lead and primary developer of the BLAST database update system, which manages the public and in-house distribution of BLAST databases (biological sequence data FIXME: size here).</p>
+                            <p>18 years of C/C++ programming experience, including libraries and frameworks such as the <a href="https://ncbi.github.io/cxx-toolkit/">NCBI C/C++ toolkits</a>, STL, <a href="https://www.boost.org/">Boost</a>, <a href="https://www.openmp.org/">OpenMP</a>, <a href="https://www.microsoft.com/en-us/sql-server/">MSSQL server</a>, <a href="https://www.sqlite.org">SQLite</a>, <a href="https://symas.com/lmdb/">LMDB</a>, pthreads and other UNIX application program interfaces (APIs)</p>
+                            <p>Participated in teams composed to evaluate software tools, provide guidelines for best practices, perform security audits of NCBI software, as well as acted as a liaison between the NCBI structure and BLAST teams.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">July 2001 - Present</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Software Development Intern</h3>
-                            <div class="subheading mb-3">Commerce One</div>
-                            <p>
-                            <ul>
-                                <li>Helped develop a GUI fingerprint workstation used by many police departments worldwide (AFIS).</li>
-                                <li>Acquired advanced knowledge of Microsoft’s Visual C++, MFC, Component Object Model (COM), and ActiveX component technology. He also acquired debugging skills in Visual C++ and Visual Basic (VB).</li>
-                            </ul>
+                            <div class="subheading mb-3"><a href="https://en.wikipedia.org/wiki/Commerce_One">Commerce One</a></div>
+                            <p>Helped develop a GUI fingerprint workstation used by many police departments worldwide (AFIS).
+                               Acquired advanced knowledge of Microsoft’s Visual C++, MFC, Component Object Model (COM), and ActiveX component technology. He also acquired debugging skills in Visual C++ and Visual Basic (VB).
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">May 2000 - May 2001</span></div>
@@ -125,15 +156,18 @@
                         <li class="list-inline-item"><i class="fas fa-cloud"></i></li>
                         <li class="list-inline-item"><i class="fab fa-aws"></i></li>
                         <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-dharmachakra"></i></li>
                         <li class="list-inline-item"><i class="fas fa-database"></i></li>
                         <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <!--<li class="list-inline-item"><i class="fab fa-atlassian"></i></li> -->
+                        <!--<li class="list-inline-item"><i class="fa fa-jupyter"></i>Jupyter</li>-->
+                        <li class="list-inline-item"></i><div class="subheading mb-3">Protocol Buffers, XML, ASN.1, XML</div></li>
                     </ul>
                     <div class="subheading mb-3">Programming Languages</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-python"></i></li>
                         <li class="list-inline-item"><i class="fab fa-cuttlefish"></i>++</li>
                         <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item"></i><div class="subheading mb-3">SQL, Perl, UNIX shell scripting</div></li>
                     </ul>
                     <div class="subheading mb-3">Operating Systems</div>
                     <ul class="list-inline dev-icons">
@@ -141,8 +175,11 @@
                         <li class="list-inline-item"><i class="fab fa-windows"></i></li>
                         <li class="list-inline-item"><i class="fab fa-apple"></i></li>
                     </ul>
-                    <div class="subheading mb-3">Process</div>
+                    <div class="subheading mb-3">Experienced with</div>
                     <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Executive Presentations
+                        </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>Cross Functional Teams
                         </li>
